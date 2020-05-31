@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar {
+    background-color: #ff5757 !important;
+}
+.navbar-brand {
+    height: 100px;
+    background-color: #ff5757 !important;
+}
+.navbar-item img{
+    max-height:100% !important
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
