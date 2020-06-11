@@ -1,0 +1,22 @@
+<mat-divider></mat-divider>
+
+<div class="show-all-panel-list" *ngFor="let pizza of pizzas">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{pizza.name}}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <mat-list>
+                <mat-list-item *ngFor="let topping of pizza.toppings">
+                    <input matInput type="text" value="{{ topping.name }}">
+                </mat-list-item>
+            </mat-list>
+
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<mat-divider></mat-divider>

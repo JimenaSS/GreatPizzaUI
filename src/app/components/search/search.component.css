@@ -1,0 +1,19 @@
+.search-form-field {
+    padding: 2%;
+}
+
+.search-result-text mat-icon {
+    color: #ff5757;
+}
+
+.search-form button {
+    display: table-cell;
+    margin-right: 8px;
+    border: none;
+    background: none;
+    color: #ff5757;
+}
+
+mat-card {
+    color: #673ab7;
+}

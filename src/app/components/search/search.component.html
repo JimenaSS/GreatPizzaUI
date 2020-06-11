@@ -1,0 +1,19 @@
+<div class="search-form" style="text-align:center">
+
+    <mat-card *ngIf="failed">{{errorMessage}}</mat-card>
+
+    <img src="./../assets/images/main-logo.png" alt="Great Pizza" [style.display]="!editing ? 'initial' : 'none'">
+    <p>
+        <mat-form-field class="search-form-field" appearance="legacy">
+            <mat-label>Search pizza</mat-label>
+            <input #searchBox matInput placeholder="Ex. Hawaiana" (keyup.enter)="Search(searchBox.value)" [(ngModel)]="pizza.name" name="name" required>
+            <mat-icon matSuffix (click)="Search(searchBox.value)">search</mat-icon>
+        </mat-form-field>
+        <button matButton matTooltip="Get all stored pizzas" (click)="GetAll()">
+            <mat-icon>view_list</mat-icon>
+        </button>
+    </p>
+
+    <app-show-all *ngIf="submittedAll"></app-show-all>
+
+</div>
