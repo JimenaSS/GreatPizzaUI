@@ -16,7 +16,6 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './components/search/search.component';
 import { ResultComponent } from './components/result/result.component';
 import { ShowAllComponent } from './components/show-all/show-all.component';
-import { AddPizzaComponent } from './components/add-pizza/add-pizza.component';
 
 
 @NgModule({
@@ -24,8 +23,7 @@ import { AddPizzaComponent } from './components/add-pizza/add-pizza.component';
     AppComponent,
     SearchComponent,
     ResultComponent,
-    ShowAllComponent,
-    AddPizzaComponent
+    ShowAllComponent
   ],
   imports: [
     BrowserModule,
