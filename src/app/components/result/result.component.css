@@ -1,0 +1,22 @@
+.search-result-text {
+    text-align: left;
+    width: 35%;
+    height: 35%;
+    margin: 0 auto;
+}
+
+.search-result-text h1 {
+    font-size: 20px;
+}
+
+.search-result-text mat-icon {
+    color: #ff5757;
+}
+
+.search-result-text button {
+    display: table-cell;
+    margin-right: 8px;
+    border: none;
+    background: none;
+    color: #ff5757;
+}
