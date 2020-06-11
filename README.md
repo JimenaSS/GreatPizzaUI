@@ -6,22 +6,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# GreatPizzaUI project
 
-## Running end-to-end tests
+This UI project was implemented using Angular Cli v 7.3.10 due to local environment npm installed. 
+To give some styles to the view, bulma framework was added. To re-use existing components, angular material was added to the project. Http is being used for the communication with GreatPizza web api services and errors are being handled using an error handler service. Communication functionality was absracted into a pizza service which is the responsible of handling the connection to the api.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Desirable implementations:
+⋅⋅* With more time and planification, unit tests must be better developed.
+⋅⋅* Documentation is missing.
+⋅⋅* A POST, PUT and DELETE process is missing to demonstrate a full CRUD communication with GreatPizza api.
