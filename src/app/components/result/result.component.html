@@ -1,0 +1,26 @@
+<mat-divider></mat-divider>
+
+<div class="search-result-text">
+    <h1>{{ pizza.name }}</h1>
+    <mat-list>
+        <mat-list-item *ngFor="let topping of pizza.toppings">
+            <input matInput type="text" value="{{ topping.name }}">
+            <button>
+        <mat-icon (click)="Delete(topping.name)">remove_circle_outline</mat-icon>
+      </button>
+        </mat-list-item>
+        <mat-list-item [style.display]="isAddingTopping ? 'initial' : 'none'">
+            <input matInput id="topping-name-input" placeholder="Ex. Pepper" [(ngModel)]="topping.name" (keyup.enter)="StoreTopping(topping.name)" required>
+            <mat-icon (click)="StoreTopping(topping.name)">check_circle</mat-icon>
+            <mat-icon (click)="CancelTopping()">cancel</mat-icon>
+        </mat-list-item>
+        <mat-list-item>
+            <button matButton (click)="Add()">
+        Add topping
+        <mat-icon>add_circle_outline</mat-icon>
+      </button>
+        </mat-list-item>
+    </mat-list>
+</div>
+
+<mat-divider></mat-divider>

@@ -41,4 +41,20 @@ export class SearchComponent implements OnInit {
       this.errorMessage = 'No pizzas found.';
     }
   }
+
+  Search(value: string) {
+    const retrievedPizza = this.pizzaService.getPizzaByName(value);
+
+    if (this.pizzaService.errorMessage != undefined) {
+      this.failed = true;
+      this.errorMessage = this.pizzaService.errorMessage;
+    } else if (retrievedPizza.name != undefined && retrievedPizza.name != ''){
+      this.result.pizza = retrievedPizza;
+      this.submitted = true;
+      this.submittedAll = this.adding = false;
+    } else {
+      this.errorMessage = `No pizza found for value ${value}.`;
+    }
+    
+  }
 }
